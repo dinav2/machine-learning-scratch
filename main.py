@@ -78,15 +78,15 @@ def main():
     print(f"  Test     - MSE: {sklearn_test_metrics['MSE']:.2f}, R²: {sklearn_test_metrics['R2']:.4f}")
     print()
     
-    # === COMPARACIÓN ===
+    # === COMPARISON ===
     print("=" * 60)
-    print("COMPARACIÓN DE MODELOS")
+    print("COMPARISON OF MODELS")
     print("=" * 60)
     
-    print(f"{'Métrica':<20} {'Custom GD':<15} {'Scikit-learn':<15} {'Diferencia':<15}")
+    print(f"{'Metric':<20} {'Custom GD':<15} {'Scikit-learn':<15} {'Difference':<15}")
     print("-" * 65)
     
-    # Comparar métricas de prueba
+    # Compare test metrics
     mse_diff = custom_test_metrics['MSE'] - sklearn_test_metrics['MSE']
     rmse_diff = custom_test_metrics['RMSE'] - sklearn_test_metrics['RMSE']
     mae_diff = custom_test_metrics['MAE'] - sklearn_test_metrics['MAE']
